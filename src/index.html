@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>API Test</title>
+  </head>
+  <body>
+    <h1>API test</h1>
+
+    <div class="sample">
+      <h2>Dog API</h2>
+      <p>↓ランダムで画像が取得されるよ</p>
+      <img id="img" src=""></img>
+    </div>
+
+    <div class="sample" id="app">
+      <h2>WP REST API</h2>
+      <p>
+        <a href="https://ja.wordpress.org/">https://ja.wordpress.org/</a>
+        の記事を10件取得してみる
+      </p>
+      <ul>
+        <li v-for="post in posts">
+          <a :href="post.link" target="_blank"> {{post.title.rendered}} </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
