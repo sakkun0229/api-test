@@ -13,7 +13,7 @@ axios
   })
 
 // WP APIのサンプル
-wpUrl = 'https://ja.wordpress.org/wp-json/wp/v2/posts?_embed'
+const wpUrl = 'https://ja.wordpress.org/wp-json/wp/v2/posts?_embed'
 
 new Vue({
   el: '#app',
